@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset='utf-8' />
+  <meta name="viewport" content="width=device-width" />
+  <title>CSSセレクター</title>
+  <style>
+    em {color: red;}
+    .keyword {font-weight: 900;}
+    #lead {font-size: 20px;}
+    em code {color:red;}
+    * { color: black; }
+  </style>
+</head>
+
+<body>
+  <p id="lead">この課題では，CSSセレクターについて学びます．<em>style要素の中身だけを編集して，正解と同じ見た目を実現してください．</em></p>
+
+  <p>CSSセレクターの一部を次に挙げます．</p>
+
+  <dl>
+    <dt>全称セレクター</dt><dd>すべての<span class="keyword">要素</span>を選択します．すべて灰色にするなら「<code>* { color: gray; }</code>」です．</dd>
+    <dt>要素型セレクター</dt><dd>指定した名前の<span class="keyword">要素</span>を選択します．<em>練習：すべてのem要素を赤にしてください．</em></dd>
+    <dt>クラスセレクター</dt><dd>指定した<span class="keyword">class属性値</span>を持つ<span class="keyword">要素</span>を選択します．<em>練習：class属性値が<code>keyword</code>である要素を太字にしてください．</em></dd>
+    <dt>IDセレクター</dt><dd>指定した<span class="keyword">ID属性値</span>を持つ<span class="keyword">要素</span>を選択します．<em>練習：ID属性値が<code>lead</code>である要素のフォントを少し大きくしてください．</em></dd>
+  </dl>
+
+  <p>「,」を使って，複数のセレクタをグループ化します（練習は割愛）．</p>
+
+  <p><code>A</code>と<code>B</code>がセレクターのとき，「<code>A B</code>」は，<code>A</code>が選択する要素の中（子孫）の要素を，<code>B</code>で選択します．<em>練習：em要素の中にあるcode要素の色を赤にしてください．</em></p>
+
+  <p>参考資料：<a href="https://developer.mozilla.org/ja/docs/Web/CSS">CSS: カスケーディングスタイルシート</a></p>
+</body>
+
+</html>
